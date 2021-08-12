@@ -9,6 +9,7 @@
 
 
 
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}" />
 
 	<title>{% block title %}{% endblock %} | draw</title>
 
@@ -27,8 +28,11 @@
 	{% block js %}{% endblock %}
 	{% block css %}{% endblock %}
 
-
+	<script src="https://cdn.jsdelivr.net/npm/fabric@4.5.1/dist/fabric.min.js"></script>
+	<script src="{% static 'js/index.js' %}"></script>
+	{% static 'js/index.js' %}
 </body>
+
 
 
 </html>
