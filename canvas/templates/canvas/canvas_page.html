@@ -1,8 +1,24 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Canvas{% endblock %}
 
 
 {% block content %}
-Hello
+
+<canvas id="canvas"></canvas>
+
+
+
+<button onclick="clearCanvas(canvas)">Clear Canvas</button>
+
+
+<button onclick="createRect(canvas)">Add Rectangle</button>
+<button onclick="createCirc(canvas)">Add Circle</button>
+
+
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/index.js' %}"></script>
 {% endblock %}

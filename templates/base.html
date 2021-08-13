@@ -25,12 +25,11 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
 
-	{% block js %}{% endblock %}
 	{% block css %}{% endblock %}
 
-	<script src="https://cdn.jsdelivr.net/npm/fabric@4.5.1/dist/fabric.min.js"></script>
-	<script src="{% static 'js/index.js' %}"></script>
-	{% static 'js/index.js' %}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/451/fabric.js"
+		integrity="sha512-dtiNm9C8FwmoX5+zAtJTTKM9EBXVlmdlH5AwBkSldaBnvAG2gnQnhzfbtCXMyZeOJrMEXynqWk1aTkhw1YXTmg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> {% block js %}{% endblock %}
 </body>
 
 
